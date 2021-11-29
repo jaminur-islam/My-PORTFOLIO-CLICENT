@@ -1,0 +1,30 @@
+/* nav design */
+
+.navbar-container ul li {
+  list-style-type: none;
+}
+
+.navbar-container ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.navbar-container ul li a:hover {
+  color: white
+}
+
+.active {
+  color : white;
+}
+
+
+@media only screen and (max-width: 576px)  {
+  .navbar-container ul {
+    text-align: center;
+  }
+  .navbar-container ul li a {
+    margin-left: 0;
+  }
+  
+}

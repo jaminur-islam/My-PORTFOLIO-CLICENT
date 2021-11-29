@@ -1,0 +1,46 @@
+.banner-container {
+
+  overflow: hidden; 
+
+  background-color: rgb(68, 63, 56);
+}
+.banner-content {
+  padding: 10px;
+  box-shadow: 10px 4px 30px rgb(7, 6, 6);
+  margin-top: 5px;
+}
+
+.more-content {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 10px 4px 30px rgb(7, 6, 6);
+}
+
+.banner-content:in-range{
+  background-color: red;
+}
+
+.banner-content:hover {
+  transition: 1s;
+  box-shadow: 0px 0px 0px ;
+}
+.more-content:hover {
+  transition: 1s;
+  box-shadow: 0px 0px 0px ;
+}
+.more-more-content:hover {
+  transition: 1s;
+  box-shadow: 0px 0px 0px ;
+}
+
+.more-more-content{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 10px 4px 30px rgb(7, 6, 6);
+}
+
+
