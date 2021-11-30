@@ -1,25 +1,79 @@
-import React from 'react';
-import './Banner.css'
-import hedimg from '../../../img/gul.png'
+import React from "react";
+import "./Banner.css";
+import hedimg from "../../../img/bigpic.png";
+import Typewriter from "typewriter-effect";
 
-const Banner = () => {
+const Banner = ({ dark }) => {
   return (
-    <div className='banner-container'>
-       <div className="container">
-           <div className='d-flex justify-content-center align-items-center banner-content'>
-              <div>
-              
-              <div className='more-content'>
-                     <div className='more-more-content'>
-                     <img height='250' width='250' className='rounded-circle mt-5 bg-dark' src={hedimg} alt="" />
-                <h2 className='text-white text-center'> JAMINUR ISLAM  </h2>
-                <h4 className='text-white text-center'> Mern stack web developer </h4>
-                     </div>
-              </div>
-              
-              </div>
-           </div>
-       </div>
+    <div className="banner-container">
+      <div
+        className={`container  mt-3 banner-container2 py-4 ${
+          !dark ? "shadow" : ""
+        }`}
+      >
+        <div className="banner-content">
+          <div className="banner-img mt-5">
+            <img src={hedimg} alt="" />
+          </div>
+          <div>
+            <h2 className="fs-1 hee"> this is my poricoy isSDFD very nice</h2>
+            <span
+              className={
+                dark ? " text-white fs-1 fw-bold " : "text-dark fs-1 fw-bold"
+              }
+            >
+              I'M JAMINUR ISLAM
+            </span>
+            <h1 className="type fs-3">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Mern Stack web developer")
+                    /*   .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .callFunction(() => {
+        console.log('All strings were deleted');
+      })
+ */
+                    .start();
+                }}
+              />
+            </h1>
+            <div>
+              <h5 className={dark ? "text-white fs-4" : "text-black fs-4"}>
+                Find with me
+              </h5>
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/jaminur-islam-022782217/">
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/mdsagor.sagur.3/">
+                    <i className="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Jaminur07260314">
+                    <i className="fab fa-twitter-square"></i>
+                  </a>
+                </li>
+              </ul>
+
+              <a
+                className="btn btn-primary"
+                href="https://drive.google.com/u/0/uc?id=1suDRsRor1zOvJB0IQJXJ1Ja688_yxuCc&export=download"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

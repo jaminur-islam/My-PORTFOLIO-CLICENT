@@ -4,27 +4,31 @@
   list-style-type: none;
 }
 
+h1 {
+  color: rgb(230, 0, 115);
+}
+
 .navbar-container ul li a {
   text-decoration: none;
   margin-left: 40px;
   font-size: 20px;
+  color: rgb(230, 0, 115);
+  font-weight: 500;
 }
 
 .navbar-container ul li a:hover {
-  color: white
+  color: rgb(0, 0, 0);
 }
 
 .active {
-  color : white;
+  color: white;
 }
 
-
-@media only screen and (max-width: 576px)  {
+@media only screen and (max-width: 576px) {
   .navbar-container ul {
     text-align: center;
   }
   .navbar-container ul li a {
     margin-left: 0;
   }
-  
 }
