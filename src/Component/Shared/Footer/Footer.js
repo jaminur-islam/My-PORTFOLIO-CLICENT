@@ -8,13 +8,10 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3">
               <div className="footer-container m-2">
-                <p>
-                  If you want to get good service then be sure to book our room
-                  The way we serve you you won't find anywhere else, So come to
-                  Chola without delay
-                </p>
-                <span>
-                  Visit us to have a fun time, book a room from my website now
+                <span className="fs-6">
+                  Of course you can visit all my sites, this website has almost
+                  all my information, and if you think you need to know more
+                  then be sure to contact me.
                 </span>
               </div>
             </div>
