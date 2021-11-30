@@ -17,6 +17,7 @@ export const GoogleForm = ({ dark }) => {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Your message has been sent successfully");
         },
         (error) => {
           console.log(error.text);
