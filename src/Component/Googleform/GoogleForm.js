@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import "./Googleform.css";
 
 export const GoogleForm = ({ dark }) => {
   const form = useRef();
@@ -31,12 +32,12 @@ export const GoogleForm = ({ dark }) => {
       </h2>
       <hr className="w-25 mx-auto text-white" />
       <form
+        className="formGoogle"
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "50%",
           margin: "0 auto",
-          padding: "20px",
+          padding: "5px",
         }}
         ref={form}
         onSubmit={sendEmail}

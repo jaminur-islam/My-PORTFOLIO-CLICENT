@@ -22,20 +22,16 @@ const works = [
 const Mywork = ({ dark }) => {
   return (
     <div>
-      <div
-        className={
-          dark ? "container my-5 text-white" : "container my-5 text-dark"
-        }
-      >
+      <div className={dark ? "container  text-white" : "container text-dark"}>
         <p className="m-0 p-0 fs-6"> FEATURES </p>
         <h2> What I do</h2>
-        <hr className="mb-5" />
+        <hr className="mb-4" />
 
         <div className="row">
           {works.map((work) => {
             return (
               <div key={work.id} className="col-lg-4">
-                <div className="work-content">
+                <div className="work-content my-lg-0 my-2 py-3">
                   <i className="far fa-file-code"></i>
                   <h5> {work.name}</h5>
                   <p> {work.des}</p>

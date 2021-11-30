@@ -6,7 +6,7 @@ const About = ({ dark }) => {
   return (
     <div
       className={dark ? "about  text-white" : "about  text-dark"}
-      style={{ margin: "80px 0" }}
+      style={{ margin: "40px 0" }}
     >
       <div className="container py-4">
         <div className="text-center">
@@ -16,8 +16,8 @@ const About = ({ dark }) => {
         <div className="about-container">
           <div>
             <div className="mx-auto">
-              <h1 className="fs-5  "> Some information for me : </h1>
-              <p className="w-75">
+              <h1 className="fs-4 text-uppercase">Some information for me </h1>
+              <p className="About-text">
                 I am an all round web developer. I am a junior programmer with
                 good knowledge of front-end and backend techniques. I like
                 structure and discipline. I like to spend time fixing little

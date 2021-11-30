@@ -34,7 +34,7 @@ const NavigationBar = ({ setDark, dark }) => {
               <li className="nav-item">
                 <a
                   onClick={() => setActive("home")}
-                  className={active == "home" ? "text-black" : ""}
+                  className={active == "home" ? "text-black mt-lg-0 mt-3" : ""}
                   aria-current="page"
                   href="#"
                 >
@@ -70,7 +70,7 @@ const NavigationBar = ({ setDark, dark }) => {
                 </a>
               </li>
               <li className="nav-item">
-                <p className="ms-3">
+                <p className="ms-3 mt-lg-0 mt-2">
                   <img
                     onClick={() => setDark(!dark)}
                     src={dark ? sun : moon}

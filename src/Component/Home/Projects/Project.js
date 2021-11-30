@@ -35,7 +35,7 @@ const projects = [
 
 const Project = ({ dark }) => {
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div style={{ marginTop: "50px" }}>
       <div className={dark ? "container text-white" : "container text-dark"}>
         <h2> my project </h2>
         <hr className="mt-1" />

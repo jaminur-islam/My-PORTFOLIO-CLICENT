@@ -26,9 +26,14 @@ h1 {
 
 @media only screen and (max-width: 576px) {
   .navbar-container ul {
-    text-align: center;
+    margin-top: 5px;
   }
   .navbar-container ul li a {
-    margin-left: 0;
+    margin-left: 10px;
+  }
+
+  .navbar-container ul li a {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
